@@ -1,0 +1,22 @@
+{
+  "name": "practice3-bryan",
+  "version": "1.0.0",
+  "description": "We are going to create a tic tac toe game with the following specifications:",
+  "main": "tic-tac-toe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2"
+  }
+}

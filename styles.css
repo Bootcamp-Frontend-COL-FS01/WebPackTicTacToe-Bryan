@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #265929;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+.players-container {
+  margin: 20px;
+}
+
+.button {
+  background-color: #bdbdbd;
+  color: rgb(54, 54, 54);
+  padding: 5px 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(54, 54, 54);
+  color: #bdbdbd;
+}
+
+#board-container {
+  display: none;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  background-color: rgba(55, 85, 183, 0.765);
+}
+
+.cell {
+  background-color: #fff;
+  color: rgba(55, 85, 183, 0.765);
+  cursor: pointer;
+  font-size: 60px;
+  height: 100px;
+  width: 100px;
+}
+
+.cell:hover {
+  background-color: #cbcbcb;
+}
+
+.statusMessage {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
