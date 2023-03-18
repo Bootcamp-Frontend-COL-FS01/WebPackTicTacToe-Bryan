@@ -1,16 +1,22 @@
 {
   "name": "practice3-bryan",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/Bootcamp-Frontend-COL-FS01/WebPackTicTacToe-Bryan.git"
+  },
   "description": "We are going to create a tic tac toe game with the following specifications:",
   "main": "tic-tac-toe.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "build": "webpack --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1"
   },
