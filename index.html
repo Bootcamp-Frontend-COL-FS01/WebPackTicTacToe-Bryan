@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tic Tac Toe</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <header>
+      <div class="title-container">
+        <h1 class="title">Let's play Tic-Tac-Toe!!!</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="players-container">
+        <form id="players-form">
+          <label for="name">Player 1:</label>
+          <input type="text" name="name" placeholder="Name" />
+          <label for="name">Player 2:</label>
+          <input type="text" name="name" placeholder="Name" /><br />
+          <input id="play" class="button" type="submit" value="PLAY!!!" />
+        </form>
+      </div>
+      <div id="board-container">
+        <div class="cell" data-cell="0"></div>
+        <div class="cell" data-cell="1"></div>
+        <div class="cell" data-cell="2"></div>
+        <div class="cell" data-cell="3"></div>
+        <div class="cell" data-cell="4"></div>
+        <div class="cell" data-cell="5"></div>
+        <div class="cell" data-cell="6"></div>
+        <div class="cell" data-cell="7"></div>
+        <div class="cell" data-cell="8"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="statusMessage-container">
+        <h1 class="statusMessage">"Enter the players names and hit PLAY!!!"</h1>
+      </div>
+      <div class="restart-container">
+        <button id="restart" class="button" hidden>"Restart"</button>
+        <button id="playAgain" class="button" hidden>"Play Again¡¡¡"</button>
+      </div>
+    </footer>
+  </body>
+</html>
